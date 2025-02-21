@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yaldız İnşaat - İletişim Bilgilerimiz">
+    <title>İletişim | Yaldız İnşaat</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <img src="logo.jpg" alt="Yaldız İnşaat Logo">
+            </a>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="index.html">ANASAYFA</a></li>
+                    <li><a href="projeler.html">PROJELER</a></li>
+                    <li><a href="hakkimizda.html">HAKKIMIZDA</a></li>
+                    <li><a href="vizyon-misyon.html">VİZYON & MİSYON</a></li>
+                    <li><a href="iletisim.html" class="active">İLETİŞİM</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sayfa Hero -->
+    <section class="page-hero contact-hero">
+        <div class="hero-content" data-aos="fade-up">
+            <h1>İletişime Geçin</h1>
+            <p>Size Yardımcı Olmaktan Mutluluk Duyarız</p>
+        </div>
+    </section>
+
+    <!-- İletişim Bilgileri ve Form -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- İletişim Bilgileri -->
+                <div class="contact-info" data-aos="fade-right">
+                    <h2 class="gradient-text">İletişim Bilgilerimiz</h2>
+                    <div class="info-items">
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3>Adres</h3>
+                                <p>Şehit Prof. Dr. İlhan Varank Kampüsü<br>45140 Yunusemre/Manisa</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3>Telefon</h3>
+                                <p>+90 553 823 75 54</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3>E-posta</h3>
+                                <p>okanyaldiz@icloud.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="info-content">
+                                <h3>Çalışma Saatleri</h3>
+                                <p>Pazartesi - Cumartesi: 09:00 - 18:00<br>Pazar: Kapalı</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-contact">
+                        <h3>Sosyal Medya</h3>
+                        <div class="social-links">
+                            <a href="https://x.com/okanvrts" target="_blank" class="social-btn">
+                                <i class="fab fa-x-twitter"></i> Twitter
+                            </a>
+                            <a href="https://instagram.com/okanyaldiz" target="_blank" class="social-btn">
+                                <i class="fab fa-instagram"></i> Instagram
+                            </a>
+                            <a href="https://linkedin.com/in/okanyaldiz" target="_blank" class="social-btn">
+                                <i class="fab fa-linkedin"></i> LinkedIn
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- İletişim Formu -->
+                <div class="contact-form-container" data-aos="fade-left">
+                    <h2 class="gradient-text">Bize Ulaşın</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="name">Adınız Soyadınız</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-posta Adresiniz</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Telefon Numaranız</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Konu</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div class="form-group full-width">
+                                <label for="message">Mesajınız</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <div class="form-group full-width">
+                                <button type="submit" class="submit-btn">
+                                    <i class="fas fa-paper-plane"></i> Gönder
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Harita -->
+    <section class="map-section">
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3124.9756334195466!2d27.3213183!3d38.6735463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c9b8a0a6fb8a3d%3A0x2a4c36e5b9c21e0f!2sManisa%20Celal%20Bayar%20%C3%9Cniversitesi!5e0!3m2!1str!2str!4v1234567890"
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <img src="logo.jpg" alt="Yaldız İnşaat Logo">
+                    </div>
+                    <p>40 yıllık tecrübemizle Manisa'nın geleceğini inşa ediyoruz.</p>
+                </div>
+                <div class="footer-contact">
+                    <h4>İletişim</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Şehit Prof. Dr. İlhan Varank Kampüsü, 45140 Yunusemre/Manisa</p>
+                    <p><i class="fas fa-phone"></i> +90 553 823 75 54</p>
+                    <p><i class="fas fa-envelope"></i> okanyaldiz@icloud.com</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Hızlı Bağlantılar</h4>
+                    <ul>
+                        <li><a href="projeler.html">Projeler</a></li>
+                        <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                        <li><a href="vizyon-misyon.html">Vizyon & Misyon</a></li>
+                        <li><a href="iletisim.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Sosyal Medya</h4>
+                    <div class="social-links">
+                        <a href="https://x.com/okanvrts" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://instagram.com/okanyaldiz" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com/in/okanyaldiz" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Yaldız İnşaat. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
