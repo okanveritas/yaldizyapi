@@ -1797,3 +1797,49 @@ body {
         height: 60px;
     }
 }
+
+/* Hamburger Menü */
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--dark-color);
+}
+
+/* Mobil Menü */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .main-nav {
+        position: fixed;
+        top: 100px; /* Header yüksekliğine göre ayarlayın */
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 100px);
+        background: var(--light-color);
+        transition: 0.3s ease;
+    }
+
+    .main-nav.active {
+        left: 0;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 0;
+        gap: 2rem;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 1rem 0;
+    }
+}
