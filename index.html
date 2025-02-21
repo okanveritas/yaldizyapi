@@ -2,7 +2,7 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description" content="Yaldız İnşaat - Manisa'nın Geleceğini İnşa Ediyoruz">
     <title>Anasayfa | Yaldız İnşaat</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -21,7 +21,10 @@
             <a href="index.html" class="logo">
                 <img src="logo.jpg" alt="Yaldız İnşaat Logo">
             </a>
-            <nav class="main-nav">
+            <button class="menu-toggle" id="menuToggle" aria-label="Menü">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="main-nav" id="mainNav">
                 <ul class="nav-links">
                     <li><a href="index.html" class="active">ANASAYFA</a></li>
                     <li><a href="projeler.html">PROJELER</a></li>
@@ -34,11 +37,10 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero-section" style="background-image: url('hero-bg.jpg')">
+    <section class="hero-section" style="background-image: url('hero-bg.jpg');">
         <div class="hero-content" data-aos="fade-up">
-            <h1>Manisa'nın Geleceğini<br>İnşa Ediyoruz</h1>
-            <p>40 Yıllık Tecrübe ve Güvenilirlik</p>
-            <a href="projeler.html" class="cta-button">Projelerimizi İnceleyin</a>
+            <h1>Manisa'nın Geleceğini İnşa Ediyoruz</h1>
+            <p>40 yıllık tecrübemizle güvenilir ve kaliteli projeler üretiyoruz</p>
         </div>
     </section>
 
@@ -189,6 +191,11 @@
         </div>
     </section>
 
+    <!-- İçerik -->
+    <main>
+        <!-- Mevcut içerik -->
+    </main>
+
     <!-- Footer -->
     <footer class="main-footer">
         <div class="footer-container">
@@ -204,6 +211,7 @@
                     <p><i class="fas fa-map-marker-alt"></i> Şehit Prof. Dr. İlhan Varank Kampüsü, 45140 Yunusemre/Manisa</p>
                     <p><i class="fas fa-phone"></i> +90 553 823 75 54</p>
                     <p><i class="fas fa-envelope"></i> okanyaldiz@icloud.com</p>
+                    <p><i class="fas fa-clock"></i> Pazartesi - Cumartesi: 09:00 - 18:00</p>
                 </div>
                 <div class="footer-links">
                     <h4>Hızlı Bağlantılar</h4>
@@ -217,9 +225,9 @@
                 <div class="footer-social">
                     <h4>Sosyal Medya</h4>
                     <div class="social-links">
-                        <a href="https://x.com/okanvrts" target="_blank"><i class="fab fa-x-twitter"></i></a>
-                        <a href="https://instagram.com/okanyaldiz" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://linkedin.com/in/okanyaldiz" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://x.com/okanvrts" target="_blank" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://instagram.com/okanyaldiz" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com/in/okanyaldiz" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
             </div>
@@ -229,13 +237,14 @@
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
     <script>
         AOS.init({
             duration: 1000,
             once: true
         });
     </script>
-    <script src="script.js"></script>
 </body>
 </html>
